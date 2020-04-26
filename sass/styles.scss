@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+// Set your brand colors
+$green: #3EC46D;
+
+// Update Bulma's global variables
+$family-sans-serif: "Righteous", sans-serif;
+$primary: $green;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/elements/box.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/form/input-textarea.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+
+html {
+    box-sizing: border-box;
+}
+
+.hero-img {
+    width: 30%;
+    margin: auto;
+}
+
+.section.is-long {
+    padding-bottom: 18rem;
+}
+
+.is-primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.section.skills {
+    margin-top: -14rem;
+    padding-bottom: 1rem;
+
+    & .box {
+        padding: 4em 0;
+    }
+}
+
+.skills-header {
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.skills-first-column {
+    border-right: 1px solid lightgrey;
+}
+
+#contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}

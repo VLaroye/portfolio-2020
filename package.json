@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/styles.scss css/styles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Vincent Laroye <laroye.vincent@protonmail.com> (http://vincentlaroye.fr)",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.14.0"
+  }
+}
