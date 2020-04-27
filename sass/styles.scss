@@ -2,6 +2,7 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 // Set your brand colors
 $green: #3EC46D;
@@ -34,13 +35,26 @@ html {
     box-sizing: border-box;
 }
 
+h3, form .label, form .input, form .textarea, button {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
 .hero-img {
+    @include mobile {
+        width: 80%;
+    }
+
+    @include tablet {
+        width: 60%;
+    }
+
     width: 30%;
     margin: auto;
 }
 
 .section.is-long {
-    padding-bottom: 25rem;
+    padding-bottom: 15rem;
 }
 
 .is-primary {
@@ -48,29 +62,49 @@ html {
     color: $white;
 }
 
+.section.projects .container {
+    @media (min-width: 500px) and (max-width: $tablet) {
+        width: 70%;
+    }
+}
+
 .section.skills {
-    margin-top: -18rem;
+    margin-top: -10rem;
     padding-bottom: 1rem;
 
     & .box {
-        padding: 4em 0;
+        padding: 2em 0;
     }
 }
 
 .skills-header {
     margin: auto;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .skills-first-column {
     border-right: 1px solid lightgrey;
 }
 
-.skills li {
-    padding: 0.5rem 0;
+.skills .column>img {
+    @include mobile {
+        height: 32px;
+        width: 32px;
+    }
+    
+    height: 96px;
+    width: 96px;
 }
 
-#contact {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+.skills li {
+    padding: 0.3rem 0;
+}
+
+.contact {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.contact .box h3 {
+    padding: 1.5rem;
 }
