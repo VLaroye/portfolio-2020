@@ -8,7 +8,6 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
@@ -31,7 +30,6 @@
       </div>
     </div>
   </nav>
-  <!-- END NAVBAR -->
   <section class="hero is-white is-fullheight-with-navbar has-text-centered">
     <div class="hero-body">
       <div class="container">
@@ -77,30 +75,66 @@
             <img class="image is-96x96 skills-header" src="./images/front.png"/>
             <h3 class="title is-size-4 is-uppercase">Front</h3>
             <ul>
-              <li>VueJS</li>
-              <li>ReactJS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
+              <li class="has-text-justify">
+                VueJS
+                <img class="image is-inline is-16x16" src="./images/vuejs.svg">
+              </li>
+              <li class="has-text-justify">
+                ReactJS
+                <img class="image is-inline is-16x16" src="./images/react.svg">
+              </li>
+              <li class="has-text-centered">
+                Javascript
+                <img class="image is-inline is-16x16" src="./images/javascript.svg">
+              </li>
+              <li class="has-text-centered">
+                HTML
+                <img class="image is-inline is-16x16" src="./images/html.svg">
+              </li>
+              <li class="has-text-centered">
+                CSS
+                <img class="image is-inline is-16x16" src="./images/css3.svg">
+              </li>
             </ul>
           </div>
           <div class="column skills-first-column">
             <img class="image is-96x96 skills-header" src="./images/back.png"/>
             <h3 class="title is-size-4 is-uppercase">Back</h3>
             <ul>
-              <li>Go</li>
-              <li>Python</li>
-              <li>NodeJS</li>
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
+              <li class="has-text-centered">
+                Go
+                <img class="image is-inline is-16x16" src="./images/golang.png">
+              </li>
+              <li class="has-text-centered">
+                Python
+                <img class="image is-inline is-16x16" src="./images/python.svg">
+              </li>
+              <li class="has-text-centered">
+                NodeJS
+                <img class="image is-inline is-16x16" src="./images/nodejs.svg">
+              </li>
+              <li class="has-text-centered">
+                PostgreSQL
+                <img class="image is-inline is-16x16" src="./images/postgresql.png">
+              </li>
+              <li class="has-text-centered">
+                MySQL
+                <img class="image is-inline is-16x16" src="./images/mysql.svg">
+              </li>
             </ul>
           </div>
           <div class="column">
             <img class="image is-96x96 skills-header" src="./images/divers.png"/>
             <h3 class="title is-size-4 is-uppercase">Divers</h3>
             <ul>
-              <li>Git</li>
-              <li>Docker</li>
+              <li class="has-text-centered">
+                Git
+                <img class="image is-inline is-16x16" src="./images/git.svg">
+              </li>
+              <li class="has-text-centered">
+                Docker
+                <img class="image is-inline is-16x16" src="./images/docker.svg">
+              </li>
             </ul>
           </div>
         </div>
@@ -108,82 +142,81 @@
     </div>
   </section>
   <section id="contact" class="has-background-white">
-    <div class="container is-fluid">
+    <div class="container">
       <div class="columns is-centered">
-        <div class="column is-half">
+        <div class="column">
           <div class="box">
             <h3 class="title has-text-centered is-uppercase">Contact</h3>
-            <div class="card-content">
-              <form>
-                <div class="columns">
-                  <div class="column is-half">
-                    <div class="field">
-                      <label class="label">Nom</label>
-                      <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="Nom" value="bulma">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-user"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                          <i class="fas fa-check"></i>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-half">
-                    <div class="field">
-                      <label class="label">Prénom</label>
-                      <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="Nom">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-user"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                          <i class="fas fa-check"></i>
-                        </span>
-                      </div>
+            <form>
+              <div class="columns">
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label">Nom</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input" type="text" placeholder="Nom" value="bulma">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
                     </div>
                   </div>
                 </div>
-                <div class="columns">
-                  <div class="column is-full">
-                    <div class="field">
-                      <label class="label">Email</label>
-                      <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="text" placeholder="Prénom">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-user"></i>
-                        </span>
-                        <span class="icon is-small is-right">
-                          <i class="fas fa-check"></i>
-                        </span>
-                      </div>
+                <div class="column is-half">
+                  <div class="field">
+                    <label class="label">Prénom</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input" type="text" placeholder="Nom">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
                     </div>
                   </div>
                 </div>
-                <div class="columns">
-                  <div class="column is-full">
-                    <div class="field">
-                      <label class="label">Message</label>
-                      <textarea class="textarea" placeholder="10 lines of textarea" rows="10"></textarea>
+              </div>
+              <div class="columns">
+                <div class="column is-full">
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input" type="text" placeholder="Prénom">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="columns">
+                <div class="column is-full">
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <textarea class="textarea" placeholder="10 lines of textarea" rows="10"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="has-text-right">
                 <button class="button is-success has-text-weight-bold">Envoyer</button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <footer class="footer is-primary">
-    <div class="content is-primary has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+  <footer class="section is-primary">
+    <div class="is-primary has-text-centered">
+      <p class="is-italic">
+        <strong class="has-text-white has-text-weight-normal">Vincent Laroye</strong> 2020
       </p>
+      <p class="is-italic">Made with <a href="https://bulma.io">Bulma</a></p>
     </div>
   </footer>
   <script defer src="./js/navbar.js"></script>

@@ -11685,14 +11685,14 @@ html {
   margin: auto; }
 
 .section.is-long {
-  padding-bottom: 18rem; }
+  padding-bottom: 25rem; }
 
 .is-primary {
   background-color: #3EC46D;
   color: white; }
 
 .section.skills {
-  margin-top: -14rem;
+  margin-top: -18rem;
   padding-bottom: 1rem; }
   .section.skills .box {
     padding: 4em 0; }
@@ -11704,6 +11704,9 @@ html {
 .skills-first-column {
   border-right: 1px solid lightgrey; }
 
+.skills li {
+  padding: 0.5rem 0; }
+
 #contact {
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
