@@ -25,7 +25,7 @@
       <div class="navbar-menu" id="navMenu">
         <div class="navbar-end">
           <a class="navbar-item" href="#contact">
-            <button class="button is-primary is-outlined has-text-weight-bold">Contactez-moi</button>
+            <button class="button is-primary is-outlined has-text-weight-bold">Un projet ? Contactez-moi</button>
           </a>
         </div>
       </div>
@@ -36,8 +36,19 @@
       <div class="container">
         <div class="columns is-centered">
           <div class="column">
-            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Développeur Front-end, Back-End</h1>
-            <h2 class="subtitle">Coucou</h2>
+            <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Hello ! Moi c'est <span class="has-text-primary">Vincent</span></h1>
+            <h2 class="subtitle is-uppercase">Développeur Front-end, Back-End</h2>
+            <div class="column columns is-centered">
+              <a href="https://github.com/VLaroye" class="image is-32x32">
+                <img src="./images/github.svg">
+              </a>
+              <a href="https://www.linkedin.com/in/vincent-laroye/" class="image is-32x32">
+                <img src="./images/linkedin.svg">
+              </a>
+              <a href="https://www.malt.fr/profile/vincentlaroye" class="image is-32x32">
+                <img src="./images/malt.png">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -51,17 +62,33 @@
       <h3 class="title has-text-centered is-section-title is-size-5-mobile is-size-3-tablet is-size-2 is-uppercase has-text-white">Mes projets récents</h3>
       <div class="columns is-multiline is-mobile is-centered">
         <div class="column is-full-mobile is-one-third-tablet">
-          <div class="box">
-            <img class="image" src="./images/canopsis.png"/>
+          <div class="box is-relative">
+            <div class="project-overlay has-text-white">
+              <p class="is-uppercase">Blindtest</p>
+              <button disabled class="button is-small is-primary is-rounded">En développement</button>
+            </div>
+            <img class="image" src="./images/blindtest.png"/>
           </div>
         </div>
         <div class="column is-full-mobile is-one-third-tablet">
-          <div class="box">
-            <img class="image" src="./images/canopsis.png"/>
+          <div class="box is-relative">
+            <div class="project-overlay has-text-white">
+              <p class="is-uppercase">AMM Festival</p>
+              <a href="https://2019.ammfest.fr">
+                <button class="button is-small is-primary is-rounded">Découvrir</button>
+              </a>
+            </div>
+            <img class="image" src="./images/ammfest2020.png"/>
           </div>
         </div>
         <div class="column is-full-mobile is-one-third-tablet">
-          <div class="box">
+          <div class="box is-relative">
+            <div class="project-overlay has-text-white">
+              <p class="is-uppercase">Canopsis</p>
+              <a href="https://www.capensis.fr/canopsis/">
+                <button class="button is-small is-primary is-rounded">Découvrir</button>
+              </a>
+            </div>
             <img class="image" src="./images/canopsis.png"/>
           </div>
         </div>
@@ -73,7 +100,7 @@
       <div class="box">
         <div class="columns has-text-centered is-mobile">
           <div class="column is-one-third skills-first-column">
-            <img class="image is-96x96-desktop is-32x32 skills-header" src="./images/front.png"/>
+            <img class="image skills-header" src="./images/front.png"/>
             <h4 class="title is-size-4 is-size-6-mobile is-uppercase">Front</h4>
             <ul>
               <li class="has-text-justify is-size-7-mobile">

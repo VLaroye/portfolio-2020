@@ -25,9 +25,18 @@ html {
     box-sizing: border-box;
 }
 
+.hero-body h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.1rem;
+} 
+
 h3, form .label, form .input, form .textarea, button {
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.1rem;
+}
+
+.hero-body a {
+    margin: 0 0.5rem;
 }
 
 .hero-img {
@@ -39,8 +48,32 @@ h3, form .label, form .input, form .textarea, button {
         width: 60%;
     }
 
-    width: 30%;
+    @include desktop {
+        width: 30%;
+    }
+
     margin: auto;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: $radius-large;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    &:hover {
+        opacity: 1;
+    }
 }
 
 .section.is-long {
